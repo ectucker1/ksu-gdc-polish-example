@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scrolling/stripes.png" type="Texture" id=1]
+[ext_resource path="res://scrolling/scrolling.gd" type="Script" id=2]
+
+[node name="Scrolling" type="Node2D"]
+
+[node name="Background" type="Sprite" parent="."]
+scale = Vector2( 15, 15 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 1600, 1600 )
+script = ExtResource( 2 )
